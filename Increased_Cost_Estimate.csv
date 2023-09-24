@@ -1,0 +1,29 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,18109.969999999998,217319.64,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (Ohio),s3,S3 Standard,0,1150,13800.00,USD,,S3 Standard storage (50000 GB per month)
+My Estimate,US East (Ohio),s3,Data Transfer,0,0,0.00,USD,,
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,4489.599999999999,53875.20,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1000 GB), Quantity (2), Instance type (db.m2.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),,VPN Connection,0,603.5,7242.00,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (1), Number of subnet associations (4)"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,965.7,11588.40,USD,,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,1467.3,17607.60,USD,,Number of Application Load Balancers (4)
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,7854.8,94257.60,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 12), Advance EC2 instance (m5a.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,183,2196.00,USD,,"Hosted Zones (1), Number of Elastic Network Interfaces (2)"
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,850,10200.00,USD,,Data transfer out to internet (10000 GB per month)
+My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,346.065,4152.78,USD,,"Number of Metrics (includes detailed and custom metrics) (1000), GetMetricData: Number of metrics requested (1000000), GetMetricWidgetImage: Number of metrics requested (1000), Standard Logs: Data Ingested (10 GB), Number of Dashboards (10), Number of Standard Resolution Alarm Metrics (100)"
+My Estimate,US East (N. Virginia),,AWS CloudTrail,0,200,2400.00,USD,,"Management events units (millions), Write management trails (2), Read management trails (1), Data events units (millions), S3 trails (1), Lambda trails (1), Insight events units (millions), Trails with Insight events (1), Write management events (10 per month)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+"EC2 - change back to dedicated instances, and increase number of instances"
+"VPC - increase NAT gateway to 2"
+"RDS - change instance type to m2.4xlarge"
+"Cloudwatch - add cloudwatch dashboard and alarms"
+"Cloudtrail - add cloudtrail to track down aws activities"
